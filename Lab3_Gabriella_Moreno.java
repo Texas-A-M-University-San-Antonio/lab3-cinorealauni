@@ -37,8 +37,15 @@
         InterestRate = input.nextDouble();
 
         // Convert the interest rate from a percentage to a decimal
+        double InterestRatePer;
+        InterestRatePer = InterestRate / 100;
 
-        FinalValue = Math.pow((1 + InterestRate)) * InitialValue * Years;
+        // 1st attempt did not work
+        //FinalValue = Math.pow((1 + InterestRate)) * InitialValue * Years;
+
+
+        // 2nd attempt
+        FinalValue = Math.pow(1 + InterestRatePer) * InitialValue;
 
         // Calculate the final value of house using formula for compound interest
         // A = P * (1 + r)^t
