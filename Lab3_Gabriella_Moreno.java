@@ -45,7 +45,7 @@
 
 
         // 2nd attempt
-        FinalValue = Math.pow(1 + InterestRatePer) * InitialValue;
+        FinalValue = Math.pow((1 + InterestRatePer)) * InitialValue;
 
         // Calculate the final value of house using formula for compound interest
         // A = P * (1 + r)^t
