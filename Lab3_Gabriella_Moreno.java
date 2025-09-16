@@ -44,12 +44,15 @@
         //FinalValue = Math.pow((1 + InterestRate)) * InitialValue * Years;
 
 
-        // 2nd attempt
-        FinalValue = Math.pow((1 + InterestRatePer)) * InitialValue;
+        // 2nd attempt...did not work
+        //FinalValue = Math.pow((1 + InterestRatePer)) * InitialValue;
+
+        // 3rd attempt
+        FinalValue = InitialValue * Math.pow(1 + InterestRatePer, Years);
 
         // Calculate the final value of house using formula for compound interest
         // A = P * (1 + r)^t
-        // A = P * t, Math.pow(1 + r)
+        // A = P * Math.ppw(1 + r, t)
 
 
         // P = initial value
@@ -60,7 +63,7 @@
 
 
 
-        System.out.print("The final value of the home is: " + FinalValue);
+        System.out.println("The final value of the home is: " + FinalValue);
 
 
 
